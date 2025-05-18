@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "abdo",
+      "email": "abdo@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "5776",
+      "username": "afaef",
+      "email": "zsefaze@aefae",
+      "password": "fzsefZS"
+    },
+    {
+      "id": "521b",
+      "username": "admin",
+      "email": "admin@admin.admin",
+      "password": "admin"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "��� ����",
+      "content": "����� ������ ���...",
+      "authorId": 1,
+      "authorName": "abdo"
+    }
+  ]
+}

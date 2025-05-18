@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\sections",
+    "\\src\\components\\sections\\NewPost",
+    "\\src\\components\\sections\\PostCard",
+    "\\src\\components\\sections\\PostDetail",
+    "\\src\\components\\sections\\PostForm",
+    "\\src\\components\\sections\\PrivateRoute",
+    "\\src\\pages"
+  ],
+  "SelectedNode": "\\src\\components\\sections\\NewPost\\NewPost.jsx",
+  "PreviewInSolutionExplorer": false
+}
