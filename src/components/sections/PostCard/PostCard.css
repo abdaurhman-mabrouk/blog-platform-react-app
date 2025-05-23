@@ -1,0 +1,62 @@
+div.post-container {
+  padding: 20px;
+  margin: 16px 0;
+  background: linear-gradient(135deg, #f9f9f9 80%, #e6e6e6 100%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s;
+}
+div.post-container:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+div.post-card {
+  min-height: 220px;
+  padding: 18px;
+  margin: 16px 0;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  transition: box-shadow 0.2s;
+}
+div.post-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+div.post-controll-container {
+  margin-bottom: 20px;
+  background: #f5f7fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 10px 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+div.post-comments {
+  display: none;
+  text-align: left;
+  background: #f7fafc;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 12px 16px;
+  margin-top: 18px;
+}
+
+div.post-comment {
+  padding: 10px 14px;
+  margin: 8px 0;
+  background: linear-gradient(90deg, #e0ffe0 60%, #f9f9f9 100%);
+  border-radius: 7px;
+  border: 1px solid #b2e5b2;
+  color: #234d23;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+div.post-comment:hover {
+  background: linear-gradient(90deg, #c8f7c5 80%, #f9f9f9 100%);
+}

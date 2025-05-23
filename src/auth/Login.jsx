@@ -12,8 +12,9 @@ export default function Login() {
     e.preventDefault();
 
     const res = await fetch(
-      `http://localhost:3001/users?email=${email}&password=${password}`
+      `http://192.168.1.13:3001/users?email=${email}&password=${password}`
     );
+
     const data = await res.json();
 
     if (data.length > 0) {
@@ -25,23 +26,33 @@ export default function Login() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Login</h2>
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
-      <button type="submit">Login</button>
-    </form>
+    <>
+      <center>
+        <form onSubmit={handleSubmit}>
+          <h2>Login</h2>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+
+          <br />
+
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+
+          <br />
+
+          <button type="submit">Login</button>
+        </form>
+      </center>
+    </>
   );
 }

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../../auth/AuthContext.jsx';
 
-function NewPost() {
+function NewPostForm() {
   const { user } = useAuth();
   const navigate = useNavigate();
 
@@ -31,7 +31,7 @@ function NewPost() {
     };
 
     try {
-      await fetch('http://localhost:3000/posts', {
+      await fetch('http://192.168.1.13:3001/posts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newPost),
@@ -88,4 +88,4 @@ const styles = {
   },
 };
 
-export default NewPost;
+export default NewPostForm;

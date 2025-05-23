@@ -1,16 +1,18 @@
-﻿/* eslint-disable react/prop-types */
-import React from "react";
-import { Navigate } from "react-router-dom";
-import { useAuth } from "../../../auth/AuthContext";
+﻿/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+import React from 'react';
+import { Navigate, useLocation } from 'react-router-dom';
+import { useAuth } from '../../../auth/AuthContext';
 
 export default function PrivateRoute({ children }) {
- const { user } = useAuth();
+  const { user } = useAuth();
+  const location = useLocation();
 
- if (!user) {
-  // لو المستخدم مش مسجل دخول → نرجعه لصفحة تسجيل الدخول
-  return <Navigate to="/login" replace />;
- }
+  if (!user) {
+    // if 'User' is not logged in → redirect to login page
+    return <Navigate to="/login" replace />;
+  }
 
- // لو مسجل دخول → نعرض الصفحة المطلوبة
- return children;
+  // if 'User' is logged in → render the children components
+  return children;
 }

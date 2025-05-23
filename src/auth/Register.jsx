@@ -1,76 +1,76 @@
-import React,{ useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Register() {
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    // ÇáÊÍÞÞ ãä ÚÏã æÌæÏ äÝÓ ÇáÅíãíá ÈÇáÝÚá
-    const check = await fetch(`http://localhost:3001/users?email=${email}`);
+    // Check if the email already exists
+    const check = await fetch(`http://192.168.1.13:3001/users?email=${email}`);
     const existing = await check.json();
     if (existing.length > 0) {
-      alert("Already Signed!");
+      alert('Already Signed!');
       return;
     }
 
-    // ÅäÔÇÁ ãÓÊÎÏã ÌÏíÏ
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     const newUser = {
       username,
       email,
-      password
+      password,
     };
 
-    await fetch("http://localhost:3001/users", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newUser)
+    await fetch('http://192.168.1.13:3001/users', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(newUser),
     });
 
-    alert("Signed Up Successfully.");
-    navigate("/login");
+    alert('Signed Up Successfully.');
+    navigate('/login');
   };
 
- return (
-   <center>
-    <form onSubmit={handleRegister}>
-      <h2>Sign Up New Account</h2>
-      <input
-        type="text"
-        placeholder="User Name"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-        required
-      />
+  return (
+    <center>
+      <form onSubmit={handleRegister}>
+        <h2>Sign Up New Account</h2>
+        <input
+          type="text"
+          placeholder="User Name"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          required
+        />
 
-      <br />
+        <br />
 
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-       />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
 
-      <br />
+        <br />
 
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
 
-      <br />
+        <br />
 
-      <button type="submit">Signup</button>
-   </form>
+        <button type="submit">Signup</button>
+      </form>
     </center>
   );
 }

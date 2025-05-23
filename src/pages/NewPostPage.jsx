@@ -3,11 +3,11 @@ import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 // import { useAuth } from '../auth/AuthContext';
-import NewPost from '../components/sections/NewPost/NewPost.jsx';
+import NewPostForm from '../components/sections/NewPostForm/NewPostForm.jsx';
 export default function NewPostPage() {
   return (
     <>
-      <NewPost />
+      <NewPostForm />
     </>
   );
 }
