@@ -14,7 +14,11 @@ function EditProfileForm() {
 
     // Check if the email already exists (excluding current user)
     const emailCheck = await fetch(
-      `http://192.168.1.13:3001/users?email=${email}`
+      `http://192.168.1.13:3001/users?email=${email}`,
+      {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+      }
     )
       .then((res) => res.json())
       .then((data) => {
@@ -28,7 +32,11 @@ function EditProfileForm() {
 
     // Check if the username already exists (excluding current user)
     const usernameCheck = await fetch(
-      `http://192.168.1.13:3001/users?username=${username}`
+      `http://192.168.1.13:3001/users?username=${username}`,
+      {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+      }
     )
       .then((res) => res.json())
       .then((data) => {
@@ -43,7 +51,7 @@ function EditProfileForm() {
     // if both are unique or belong to current user, update profile
     if (emailCheck && usernameCheck) {
       await fetch(`http://192.168.1.13:3001/users/${userId}`, {
-        method: 'PUT',
+        method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           username,

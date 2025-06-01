@@ -4,121 +4,31 @@
       "username": "root",
       "email": "root@root",
       "password": "root",
-      "id": "5776"
+      "id": "5776",
+      "role": "admin",
+      "token": "mbco2iuur0274uz3yff",
+      "expiresAt": 1748808638454
     },
     {
       "id": "521b",
       "username": "admin",
       "email": "admin@admin",
-      "password": "admin"
+      "password": "admin",
+      "role": "admin",
+      "token": "mbcm6p22tmt0dfls1k",
+      "expiresAt": 1748805473882
     },
     {
-      "id": "e624",
       "username": "hacker",
       "email": "hacker@hacker",
-      "password": "hacker"
+      "password": "hacker",
+      "id": "e624",
+      "role": "user",
+      "token": "mb6pstawd3stf9malfs",
+      "expiresAt": 1748448747608
     }
   ],
   "posts": [
-    {
-      "id": "1",
-      "title": "Hello",
-      "body": "Hello Post",
-      "author": "admin",
-      "userId": "521b",
-      "createdAt": "2025-05-19T09:49:53.631Z",
-      "likes": [
-        "root",
-        "admin"
-      ],
-      "comments": [
-        {
-          "username": "root",
-          "text": "gdbfhtfrsd"
-        },
-        {
-          "username": "root",
-          "text": "gsezer"
-        },
-        {
-          "username": "root",
-          "text": "gfrsggsdgvs"
-        },
-        {
-          "username": "root",
-          "text": "jsdhburu"
-        },
-        {
-          "username": "admin",
-          "text": "fewaf"
-        }
-      ],
-      "shares": [
-        "root"
-      ]
-    },
-    {
-      "id": "de61",
-      "title": "post 2",
-      "body": "this is post 2",
-      "author": "admin",
-      "userId": "521b",
-      "createdAt": "2025-05-19T09:49:53.631Z",
-      "likes": [
-        "root",
-        "admin"
-      ],
-      "comments": [
-        {
-          "username": "root",
-          "text": "sgeerzrgs"
-        }
-      ]
-    },
-    {
-      "id": "45ff",
-      "title": "post 3",
-      "body": "this is post 3",
-      "author": "admin",
-      "userId": "521b",
-      "createdAt": "2025-05-19T09:50:09.606Z",
-      "likes": [
-        "root",
-        "admi",
-        "hacker"
-      ],
-      "comments": [
-        {
-          "username": "admin",
-          "text": "gszrger"
-        }
-      ]
-    },
-    {
-      "id": "e5da",
-      "title": "I'M ROOT",
-      "body": "Roooooooooooooooooooooooooot",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-05-20T17:57:42.301Z",
-      "comments": [
-        {
-          "username": "root",
-          "text": "cjwshwecjwnu"
-        },
-        {
-          "username": "root",
-          "text": "sdrtht"
-        },
-        {
-          "username": "root",
-          "text": "sdzvz"
-        }
-      ],
-      "likes": [
-        "root"
-      ]
-    },
     {
       "id": "4c2d",
       "title": "Hello React",
@@ -132,21 +42,8 @@
           "text": "srrsdzsdsdv"
         }
       ],
-      "likes": [
-        "root"
-      ]
-    },
-    {
-      "id": "48fb",
-      "title": "gfxdghth",
-      "body": "dghdrth",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-05-20T19:06:41.088Z",
-      "comments": [],
-      "likes": [
-        "root"
-      ]
+      "likes": ["root"],
+      "shares": ["root"]
     },
     {
       "id": "ed1d",
@@ -156,9 +53,7 @@
       "userId": "5776",
       "createdAt": "2025-05-20T19:15:30.329Z",
       "comments": [],
-      "likes": [
-        "root"
-      ]
+      "likes": ["root"]
     },
     {
       "title": "sserrgerge",
@@ -168,9 +63,7 @@
       "userId": "5776",
       "id": "7f4f",
       "comments": [],
-      "likes": [
-        "root"
-      ]
+      "likes": ["root"]
     },
     {
       "id": "2562",
@@ -180,9 +73,8 @@
       "userId": "5776",
       "createdAt": "2025-05-22T11:02:44.821Z",
       "comments": [],
-      "likes": [
-        "root"
-      ]
+      "likes": ["root"],
+      "shares": ["root"]
     },
     {
       "id": "a68f",
@@ -192,9 +84,7 @@
       "userId": "5776",
       "createdAt": "2025-05-22T13:29:48.234Z",
       "comments": [],
-      "likes": [
-        "root"
-      ]
+      "likes": ["root"]
     },
     {
       "id": "6a6c",
@@ -204,9 +94,7 @@
       "userId": "5776",
       "createdAt": "2025-05-22T17:56:23.471Z",
       "comments": [],
-      "likes": [
-        "root"
-      ]
+      "likes": ["root"]
     },
     {
       "id": "611b",
@@ -216,9 +104,7 @@
       "userId": "5776",
       "createdAt": "2025-05-22T18:05:15.875Z",
       "comments": [],
-      "likes": [
-        "root"
-      ]
+      "likes": ["root"]
     },
     {
       "id": "06a7",
@@ -228,9 +114,7 @@
       "userId": "5776",
       "createdAt": "2025-05-23T04:10:25.141Z",
       "comments": [],
-      "likes": [
-        "root"
-      ]
+      "likes": ["root"]
     },
     {
       "id": "a009",
@@ -240,9 +124,7 @@
       "userId": "5776",
       "createdAt": "2025-05-23T04:11:23.945Z",
       "comments": [],
-      "likes": [
-        "root"
-      ]
+      "likes": ["root"]
     },
     {
       "id": "1c85",
@@ -252,9 +134,89 @@
       "userId": "5776",
       "createdAt": "2025-05-23T04:11:56.226Z",
       "comments": [],
-      "likes": [
-        "root"
+      "likes": ["root"]
+    },
+    {
+      "id": "8400",
+      "title": "dfserse",
+      "body": "rszvsergf",
+      "author": "hacker",
+      "userId": "e624",
+      "createdAt": "2025-05-25T11:29:56.374Z",
+      "comments": [
+        {
+          "username": "hacker",
+          "text": "Hello From Hacker Post"
+        }
       ]
+    },
+    {
+      "id": "aaf2",
+      "title": "dnnnnn",
+      "body": "dnrtttttttttt",
+      "author": "root",
+      "userId": "5776",
+      "createdAt": "2025-05-26T10:00:46.205Z",
+      "comments": [],
+      "likes": ["root"]
+    },
+    {
+      "id": "f9ed",
+      "title": "kvszijrvejgij",
+      "body": "lkiorrgejkfjmiser\nflkrodkrtgoie\n",
+      "author": "root",
+      "userId": "5776",
+      "createdAt": "2025-05-27T13:23:07.689Z",
+      "comments": []
+    },
+    {
+      "id": "b820",
+      "title": "I Created JWT Feature/Service",
+      "body": "Just Now",
+      "author": "root",
+      "userId": "5776",
+      "createdAt": "2025-05-27T16:09:19.884Z",
+      "comments": [
+        {
+          "username": "root",
+          "text": "No One Cares!"
+        }
+      ]
+    },
+    {
+      "id": "b2a1",
+      "title": "sdsjnsjnfjsn",
+      "body": "mkdfnjfncmzvnjrnfjsnd",
+      "author": "root",
+      "userId": "5776",
+      "createdAt": "2025-06-01T05:18:42.754Z",
+      "comments": []
+    },
+    {
+      "id": "d1a2",
+      "title": "Duplicated Post 1",
+      "body": "This is a duplicated post for testing.",
+      "author": "admin",
+      "userId": "521b",
+      "createdAt": "2025-06-02T10:00:00.000Z",
+      "comments": [
+        {
+          "username": "root",
+          "text": "Interesting duplicate!"
+        }
+      ],
+      "likes": ["admin"]
+    },
+    {
+      "id": "d1a3",
+      "title": "Duplicated Post 2",
+      "body": "Another duplicated post for testing.",
+      "author": "hacker",
+      "userId": "e624",
+      "createdAt": "2025-06-02T11:00:00.000Z",
+      "comments": [],
+      "likes": ["hacker"]
     }
-  ]
+  ],
+  "pages": []
 }

@@ -41,6 +41,7 @@ function PostList() {
             postBody={post.body}
             postLikes={post.likes}
             postComments={post.comments}
+            postShares={post.shares}
           />
         );
       })}

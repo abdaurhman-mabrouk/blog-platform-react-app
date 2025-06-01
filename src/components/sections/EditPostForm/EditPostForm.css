@@ -1,0 +1,77 @@
+/* EditPostForm.css - Modern, clean styles for the Edit Post form */
+
+.edit-post-form-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7fafc;
+}
+
+.edit-post-form {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.edit-post-form h2 {
+  color: #2563eb;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.edit-post-form label {
+  display: block;
+  color: #374151;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.edit-post-form input[type="text"],
+.edit-post-form textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.edit-post-form input[type="text"]:focus,
+.edit-post-form textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 2px #2563eb33;
+}
+
+.edit-post-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.edit-post-form button[type="submit"] {
+  width: 100%;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.75rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(37,99,235,0.08);
+}
+
+.edit-post-form button[type="submit"]:hover,
+.edit-post-form button[type="submit"]:focus {
+  background: #1d4ed8;
+}

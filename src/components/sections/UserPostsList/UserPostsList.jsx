@@ -37,12 +37,13 @@ function UserPostsList() {
             <PostCard
               key={post.id}
               postId={post.id}
-              Author={post.author}
+              postAuthor={post.author}
               postTitle={post.title}
               postBody={post.body}
               postLikes={post.likes}
               postComments={post.comments}
               postDate={post.createdAt}
+              postShares={post.shares}
             />
           ))
         ) : (

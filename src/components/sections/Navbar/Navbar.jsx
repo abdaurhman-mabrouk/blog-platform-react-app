@@ -18,6 +18,7 @@ export default function Navbar() {
             <Link to="/new_post">New Post</Link>
             <Link to="/feed">Feed</Link>
             <Link to="/profile">Profile</Link>
+            <Link to="/dashboard">Dashboard</Link>
             <Link to="/edit_profile">Edit Profile</Link>
             <button onClick={logout}>Logout</button>
           </>
