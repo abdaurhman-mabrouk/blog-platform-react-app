@@ -6,8 +6,8 @@
       "password": "root",
       "id": "5776",
       "role": "admin",
-      "token": "mbco2iuur0274uz3yff",
-      "expiresAt": 1748808638454
+      "token": "mbkq2zlljlchaoqzgs",
+      "expiresAt": 1749295748793
     },
     {
       "id": "521b",
@@ -24,36 +24,90 @@
       "password": "hacker",
       "id": "e624",
       "role": "user",
-      "token": "mb6pstawd3stf9malfs",
-      "expiresAt": 1748448747608
+      "token": "mbhs6jx4yraspdhhlg",
+      "expiresAt": 1749117875800
+    },
+    {
+      "id": "2ae2",
+      "username": "manager",
+      "email": "manager@manager",
+      "password": "manager",
+      "token": "mbgg9khdns3l0br4up",
+      "expiresAt": 1749037394929
+    },
+    {
+      "id": "76dd",
+      "username": "v-vsoso",
+      "email": "v-vsoso@v-vsoso",
+      "password": "990gh",
+      "token": "mbi9um7fhjeectkbs3f",
+      "expiresAt": 1749147551979
     }
   ],
   "posts": [
     {
       "id": "4c2d",
       "title": "Hello React",
-      "body": "React is JS Framework!",
+      "body": "React is a JS Framework!\nReact is nearly a Library rather than a Framework!\nReact is Meta's Framework!\n",
       "author": "root",
       "userId": "5776",
       "createdAt": "2025-05-20T18:00:33.317Z",
       "comments": [
         {
-          "username": "admin",
-          "text": "srrsdzsdsdv"
+          "id": "c1dju",
+          "username": "root",
+          "text": "Asome!",
+          "replies": [
+            {
+              "id": "06a7dae",
+              "username": "admin",
+              "text": "Noooo it's not!"
+            },
+            {
+              "id": "1749212353779ghb2c9auf",
+              "username": "root",
+              "text": "dczEfAWefaEf"
+            }
+          ]
+        },
+        {
+          "id": "c1dju12",
+          "username": "root",
+          "text": "this is a Comment of another Place."
+        },
+        {
+          "id": "06a7adaeqqq",
+          "username": "root",
+          "text": "szveDFaEfqaef"
+        },
+        {
+          "id": "17492118820947sa1g8czb",
+          "username": "root",
+          "text": "sfaeqeeeeeeeeeeeeeeee",
+          "replies": [
+            {
+              "id": "1749213230391fxv7wgeht",
+              "username": "root",
+              "text": "KKKKKKK."
+            }
+          ]
+        },
+        {
+          "id": "1749213255837sasrx83uy",
+          "username": "root",
+          "text": "zndfjnsjnzjndh"
         }
       ],
-      "likes": ["root"],
-      "shares": ["root"]
-    },
-    {
-      "id": "ed1d",
-      "title": "Hssbsheh",
-      "body": "Hxhshshsh",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-05-20T19:15:30.329Z",
-      "comments": [],
-      "likes": ["root"]
+      "likes": [
+        "root"
+      ],
+      "shares": [
+        "root",
+        "root",
+        "root",
+        "root",
+        "root"
+      ]
     },
     {
       "title": "sserrgerge",
@@ -63,7 +117,9 @@
       "userId": "5776",
       "id": "7f4f",
       "comments": [],
-      "likes": ["root"]
+      "likes": [
+        "root"
+      ]
     },
     {
       "id": "2562",
@@ -72,9 +128,25 @@
       "author": "root",
       "userId": "5776",
       "createdAt": "2025-05-22T11:02:44.821Z",
-      "comments": [],
-      "likes": ["root"],
-      "shares": ["root"]
+      "comments": [
+        {
+          "id": "vdsa",
+          "username": "root",
+          "text": "hello"
+        },
+        {
+          "id": "vdsw",
+          "username": "root",
+          "text": "shshhsh"
+        }
+      ],
+      "likes": [
+        "root"
+      ],
+      "shares": [
+        "root",
+        "root"
+      ]
     },
     {
       "id": "a68f",
@@ -84,7 +156,9 @@
       "userId": "5776",
       "createdAt": "2025-05-22T13:29:48.234Z",
       "comments": [],
-      "likes": ["root"]
+      "likes": [
+        "root"
+      ]
     },
     {
       "id": "6a6c",
@@ -94,7 +168,9 @@
       "userId": "5776",
       "createdAt": "2025-05-22T17:56:23.471Z",
       "comments": [],
-      "likes": ["root"]
+      "likes": [
+        "root"
+      ]
     },
     {
       "id": "611b",
@@ -104,7 +180,9 @@
       "userId": "5776",
       "createdAt": "2025-05-22T18:05:15.875Z",
       "comments": [],
-      "likes": ["root"]
+      "likes": [
+        "root"
+      ]
     },
     {
       "id": "06a7",
@@ -114,7 +192,9 @@
       "userId": "5776",
       "createdAt": "2025-05-23T04:10:25.141Z",
       "comments": [],
-      "likes": ["root"]
+      "likes": [
+        "root"
+      ]
     },
     {
       "id": "a009",
@@ -124,7 +204,9 @@
       "userId": "5776",
       "createdAt": "2025-05-23T04:11:23.945Z",
       "comments": [],
-      "likes": ["root"]
+      "likes": [
+        "root"
+      ]
     },
     {
       "id": "1c85",
@@ -134,7 +216,9 @@
       "userId": "5776",
       "createdAt": "2025-05-23T04:11:56.226Z",
       "comments": [],
-      "likes": ["root"]
+      "likes": [
+        "root"
+      ]
     },
     {
       "id": "8400",
@@ -145,6 +229,7 @@
       "createdAt": "2025-05-25T11:29:56.374Z",
       "comments": [
         {
+          "id": "06a7w",
           "username": "hacker",
           "text": "Hello From Hacker Post"
         }
@@ -158,7 +243,9 @@
       "userId": "5776",
       "createdAt": "2025-05-26T10:00:46.205Z",
       "comments": [],
-      "likes": ["root"]
+      "likes": [
+        "root"
+      ]
     },
     {
       "id": "f9ed",
@@ -201,11 +288,14 @@
       "createdAt": "2025-06-02T10:00:00.000Z",
       "comments": [
         {
+          "id": "sawfae2",
           "username": "root",
           "text": "Interesting duplicate!"
         }
       ],
-      "likes": ["admin"]
+      "likes": [
+        "admin"
+      ]
     },
     {
       "id": "d1a3",
@@ -215,7 +305,47 @@
       "userId": "e624",
       "createdAt": "2025-06-02T11:00:00.000Z",
       "comments": [],
-      "likes": ["hacker"]
+      "likes": [
+        "hacker"
+      ]
+    },
+    {
+      "id": "fa70",
+      "title": "Which One ?",
+      "body": "-Angular.js- VS -React.js-",
+      "author": "root",
+      "userId": "5776",
+      "createdAt": "2025-06-03T14:53:40.250Z",
+      "likes": [
+        "root"
+      ]
+    },
+    {
+      "id": "a299",
+      "title": "Hdhdhdhxh",
+      "body": "Hxhxhshdh",
+      "author": "root",
+      "userId": "5776",
+      "createdAt": "2025-06-04T18:24:53.812Z",
+      "likes": [
+        "root"
+      ]
+    },
+    {
+      "id": "3a85",
+      "title": "tututug",
+      "body": "fututufyf",
+      "author": "v-vsoso",
+      "userId": "76dd",
+      "createdAt": "2025-06-04T18:27:25.069Z"
+    },
+    {
+      "id": "abc3",
+      "title": "zdifhhirfihfihfrhi",
+      "body": "fiejjeifihefhi",
+      "author": "v-vsoso",
+      "userId": "76dd",
+      "createdAt": "2025-06-04T18:31:39.848Z"
     }
   ],
   "pages": []

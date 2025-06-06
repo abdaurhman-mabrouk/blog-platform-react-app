@@ -11,12 +11,14 @@ export async function LikePostService(postId, username) {
     const response = await fetch(`${VITE_BASE_API_URL}/posts/${postId}`);
     const data = await response.json();
 
+    let updatedLikes;
     if (data.likes?.includes(username)) {
-      alert('You already liked this post!');
-      return;
+      // Remove the like if user already liked
+      updatedLikes = data.likes.filter((user) => user !== username);
+    } else {
+      // Add the like if user hasn't liked yet
+      updatedLikes = [...(data.likes || []), username];
     }
-
-    const updatedLikes = [...(data.likes || []), username];
 
     const updateResponse = await fetch(`${VITE_BASE_API_URL}/posts/${postId}`, {
       method: 'PATCH',
@@ -40,9 +42,12 @@ export async function CommentPostService(postId, username) {
     const comment = window.prompt('Enter Your Comment:');
     if (!comment) return;
 
+    const commentId =
+      Date.now().toString() + Math.random().toString(36).substr(2, 9);
+
     const updatedComments = [
       ...(data.comments || []),
-      { username, text: comment },
+      { id: commentId, username, text: comment },
     ];
 
     const updateResponse = await fetch(`${VITE_BASE_API_URL}/posts/${postId}`, {
@@ -55,6 +60,105 @@ export async function CommentPostService(postId, username) {
   } catch (error) {
     console.error('Failed to comment on post:', error);
     throw error;
+  }
+}
+// Comment Post Service
+export async function ReplayCommentPostService(
+  postId,
+  postAuthor,
+  username,
+  userRole,
+  commentId,
+  replayText
+) {
+  try {
+    const response = await fetch(`${VITE_BASE_API_URL}/posts/${postId}`, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    const data = await response.json();
+
+    const replay = replayText.trim();
+    if (!replay) return;
+
+    const replayId =
+      Date.now().toString() + Math.random().toString(36).substr(2, 9);
+
+    const updatedComments = data.comments.map((comment) => {
+      if (comment.id === commentId) {
+        return {
+          ...comment,
+          replies: [
+            ...(comment.replies || []),
+            { id: replayId, username, text: replay },
+          ],
+        };
+      }
+      return comment;
+    });
+
+    const updateResponse = await fetch(`${VITE_BASE_API_URL}/posts/${postId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ comments: updatedComments }),
+    });
+    return await updateResponse.json();
+  } catch (error) {
+    console.error('Failed to comment on post:', error);
+    throw error;
+  }
+}
+
+//Delete Comment Service
+export async function DeleteCommentService(
+  postId,
+  postAuthor,
+  commentId,
+  username,
+  userRole
+) {
+  //Check if the User is the Author of the Post or Admin
+  if (postAuthor === username || userRole === 'admin') {
+    //fetch the comment's post data
+    try {
+      const response = await fetch(`${VITE_BASE_API_URL}/posts/${postId}`, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const data = await response.json();
+
+      //Check if the comments exist
+      if (!data || !data.comments) return;
+
+      //Confirm the deletion
+      const confirmDeletion = window.confirm(
+        'Are you sure you want to delete this comment? This action cannot be undone.'
+      );
+
+      if (confirmDeletion) {
+        //Filter out the comment to be deleted
+        const updatedComments = data.comments.filter(
+          (comment) => comment.id !== commentId
+        );
+
+        //Update the post Comments
+        const updatedResponse = await fetch(
+          `${VITE_BASE_API_URL}/posts/${postId}`,
+          {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ comments: updatedComments }),
+          }
+        );
+      } else {
+        return;
+      }
+    } catch (error) {
+      console.error('Failed to delete comment:', error);
+      throw error;
+    } finally {
+      console.log('Comment deletion process completed.');
+    }
   }
 }
 
@@ -77,6 +181,10 @@ export async function SharePostService(postId, username) {
     console.error('Failed to share post:', error);
     throw error;
   }
+}
+
+export async function EditPostService(postId, username) {
+  window.location.href.assign(`/edit_post/${postId}`);
 }
 
 //Delete Post Service

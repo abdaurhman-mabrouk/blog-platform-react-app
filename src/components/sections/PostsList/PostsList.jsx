@@ -4,6 +4,9 @@ import { useState, useEffect } from 'react';
 import { useAuth } from '../../../auth/AuthContext.jsx';
 import PostCard from '../PostCard/PostCard.jsx';
 
+const API_BASE_URL = import.meta.env.VITE_BASE_API_URL;
+const UI_BASE_URL = import.meta.env.VITE_BASE_URL;
+
 function PostList() {
   const [posts, setPosts] = useState([]);
   const { user } = useAuth();
@@ -11,7 +14,7 @@ function PostList() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('http://192.168.1.13:3001/posts', {
+        const response = await fetch(`${API_BASE_URL}/posts`, {
           method: 'GET',
           headers: { 'Content-Type': 'application/json' },
         });
@@ -28,7 +31,7 @@ function PostList() {
   }, []);
 
   return (
-    <div>
+    <div className="post-list-container">
       {posts.map((post, key) => {
         return (
           <PostCard

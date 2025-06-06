@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FetchUsersService } from '../../../services/PostServices';
 
-function UsersList() {
+export default function UsersList() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -38,5 +38,3 @@ function UsersList() {
     </>
   );
 }
-
-export default UsersList;

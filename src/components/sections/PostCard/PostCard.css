@@ -4,11 +4,11 @@ div.post-container {
   background: linear-gradient(135deg, #f9f9f9 80%, #e6e6e6 100%);
   border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: box-shadow 0.2s;
 }
 div.post-container:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 div.post-card {
@@ -18,11 +18,33 @@ div.post-card {
   background: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
   transition: box-shadow 0.2s;
 }
+
 div.post-card:hover {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+/* div.post-card > span {
+  display: flex;
+  justify-content: space-between !important;
+} */
+
+span.post-title-wrapper-container {
+  display: inline-block;
+}
+
+span.post-menu-mark-wrapper-container {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 100%;
+  /* border: 1px solid #000; */
 }
 
 div.post-controll-container {

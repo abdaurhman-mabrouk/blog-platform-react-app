@@ -2,12 +2,15 @@
 /* eslint-disable no-unused-vars */
 import React, { lazy } from 'react';
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Meta, useParams } from 'react-router-dom';
 import { useAuth } from '../../../auth/AuthContext';
 import './EditPostForm.css';
 const ConfirmProcessModal = lazy(() => {
   return import('../ConfirmProcessModal/ConfirmProcessModal');
 });
+
+const API_BASE_URL = import.meta.env.VITE_BASE_API_URL;
+const UI_BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function EditPostForm({ postId, postTitle, postBody }) {
   const { id } = useParams();
@@ -18,7 +21,7 @@ function EditPostForm({ postId, postTitle, postBody }) {
   });
 
   useEffect(() => {
-    fetch(`http://192.168.1.13:3001/posts/${id}`, {
+    fetch(`${API_BASE_URL}/posts/${id}`, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     })
@@ -42,7 +45,7 @@ function EditPostForm({ postId, postTitle, postBody }) {
     e.preventDefault();
 
     try {
-      fetch(`http://192.168.1.13:3001/posts/${id}`, {
+      fetch(`${API_BASE_URL}/posts/${id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -83,6 +86,7 @@ function EditPostForm({ postId, postTitle, postBody }) {
           </div>
           <button
             type="button"
+            onClick={handleSubmit}
             data-bs-toggle="modal"
             data-bs-target="#confirmProcessModal">
             Update Post

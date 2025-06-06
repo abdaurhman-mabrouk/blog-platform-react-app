@@ -4,6 +4,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../../auth/AuthContext.jsx';
 
+const API_BASE_URL = import.meta.env.VITE_BASE_API_URL;
+const UI_BASE_URL = import.meta.env.VITE_BASE_URL;
+
 function NewPostForm() {
   const { user } = useAuth();
   const navigate = useNavigate();
@@ -16,7 +19,7 @@ function NewPostForm() {
     e.preventDefault();
 
     if (!title || !body) {
-      alert('العنوان والمحتوى مطلوبان!');
+      alert('The Post Title and Body are required!');
       return;
     }
 
@@ -37,9 +40,9 @@ function NewPostForm() {
         body: JSON.stringify(newPost),
       });
 
-      navigate('/feed'); // ارجع للصفحة الرئيسية بعد الإضافة
+      navigate('/feed');
     } catch (error) {
-      alert('حدث خطأ أثناء النشر!');
+      alert('An error occurred while posting!');
     } finally {
       setLoading(false);
     }
@@ -47,18 +50,18 @@ function NewPostForm() {
 
   return (
     <div style={styles.container}>
-      <h2>✍️ إضافة مقال جديد</h2>
+      <h2>✍️ Add New Post</h2>
       <form onSubmit={handleSubmit} style={styles.form}>
         <input
           type="text"
-          placeholder="عنوان المقال"
+          placeholder="Post Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           style={styles.input}
         />
 
         <textarea
-          placeholder="محتوى المقال"
+          placeholder="Post Body"
           value={body}
           onChange={(e) => setBody(e.target.value)}
           rows={10}
@@ -66,7 +69,7 @@ function NewPostForm() {
         />
 
         <button type="submit" disabled={loading} style={styles.button}>
-          {loading ? 'جارٍ النشر...' : 'نشر المقال'}
+          {loading ? 'Publishing...' : 'Publish Post'}
         </button>
       </form>
     </div>

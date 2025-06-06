@@ -1,8 +1,11 @@
+const API_BASE_URL = import.meta.env.VITE_BASE_API_URL;
+const UI_BASE_URL = import.meta.env.VITE_BASE_URL;
+
 // Generate Login Token Service
 export async function GenerateLoginTokenService({ email, password }) {
   try {
     const response = await fetch(
-      `http://192.168.1.13:3001/users?email=${email}&password=${password}`
+      `${API_BASE_URL}/users?email=${email}&password=${password}`
     );
     const data = await response.json();
 
@@ -13,7 +16,7 @@ export async function GenerateLoginTokenService({ email, password }) {
 
     localStorage.setItem('token', JSON.stringify({ token, expiresAt }));
 
-    await fetch(`http://192.168.1.13:3001/users/${data[0].id}`, {
+    await fetch(`${API_BASE_URL}/users/${data[0].id}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ token, expiresAt }),
@@ -36,7 +39,7 @@ export async function LoginTokenService() {
   }
 
   const response = await fetch(
-    `http://192.168.1.13:3001/users?token=${tokenData.token}`
+    `${API_BASE_URL}/users?token=${tokenData.token}`
   );
   const data = await response.json();
 

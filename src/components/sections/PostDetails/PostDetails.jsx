@@ -5,12 +5,15 @@ import { useAuth } from '../../../auth/AuthContext';
 import PostCard from '../PostCard/PostCard';
 import { useParams } from 'react-router-dom';
 
+const API_BASE_URL = import.meta.env.VITE_BASE_API_URL;
+const UI_BASE_URL = import.meta.env.VITE_BASE_URL;
+
 function PostDetails() {
   const { id } = useParams();
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    fetch(`http://192.168.1.13:3001/posts/${id}`, {
+    fetch(`${API_BASE_URL}/posts/${id}`, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     })
@@ -40,6 +43,7 @@ function PostDetails() {
           postDate={post.createdAt}
           postComments={post.comments}
           postLikes={post.likes}
+          postShares={post.shares}
         />
       )}
     </>

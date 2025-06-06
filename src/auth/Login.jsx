@@ -6,6 +6,9 @@ import {
   LoginTokenService,
 } from '../services/TokenServices';
 
+const API_BASE_URL = import.meta.env.VITE_BASE_API_URL;
+const UI_BASE_URL = import.meta.env.VITE_BASE_URL;
+
 export default function Login() {
   const API_BASE_URL = import.meta.env.VITE_BASE_API_URL;
   const [email, setEmail] = useState('');
@@ -28,7 +31,7 @@ export default function Login() {
     e.preventDefault();
 
     const response = await fetch(
-      `${REACT_APP_API_URL}/users?email=${email}&password=${password}`
+      `${API_BASE_URL}/users?email=${email}&password=${password}`
     );
 
     const data = await response.json();
@@ -64,9 +67,12 @@ export default function Login() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
+
         <br />
 
-        <button type="submit">Login</button>
+        <button type="submit" onClick={handleSubmit}>
+          Login
+        </button>
       </form>
     </center>
   );
