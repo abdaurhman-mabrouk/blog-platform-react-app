@@ -1,0 +1,70 @@
+.user-details-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cover {
+  background: linear-gradient(135deg, #0d6efd, #6f42c1);
+  height: 160px;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+}
+
+.avatar {
+  position: absolute;
+  bottom: -40px;
+  left: 20px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.profile-info {
+  margin-top: 70px;
+  padding: 0 20px;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.profile-meta {
+  margin-top: 8px;
+  display: flex;
+  gap: 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.profile-meta svg {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #0d6efd;
+}
+
+.no-posts {
+  text-align: center;
+  color: #6c757d;
+  margin-top: 20px;
+}
+
+.no-posts svg {
+  margin-bottom: 8px;
+  opacity: 0.85;
+}

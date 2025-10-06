@@ -1,0 +1,87 @@
+.admin-dashboard-container {
+  max-width: 480px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+.admin-dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2d3748;
+}
+
+.admin-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.admin-dashboard-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #f9fafb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.admin-dashboard-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.admin-dashboard-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.5rem;
+}
+
+.admin-dashboard-count {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.admin-dashboard-card.users {
+  background: #e3edfa;
+}
+
+.admin-dashboard-card.posts {
+  background: #e6f9ea;
+}
+
+.admin-dashboard-card.likes {
+  background: #fffbe6;
+}
+
+.admin-dashboard-card.comments {
+  background: #f3e8ff;
+}
+
+.admin-dashboard-card.users .admin-dashboard-count {
+  color: #2563eb;
+}
+
+.admin-dashboard-card.posts .admin-dashboard-count {
+  color: #059669;
+}
+
+.admin-dashboard-card.likes .admin-dashboard-count {
+  color: #ca8a04;
+}
+
+.admin-dashboard-card.comments .admin-dashboard-count {
+  color: #7c3aed;
+}
+
+.admin-dashboard-label {
+  color: #4b5563;
+  font-size: 0.9rem;
+}

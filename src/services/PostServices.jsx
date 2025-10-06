@@ -4,6 +4,7 @@ import React from 'react';
 
 //Environment Variables init
 const VITE_BASE_API_URL = import.meta.env.VITE_BASE_API_URL;
+const VITE_BASE_URL = import.meta.env.VITE_BASE_URL;
 
 // Like Post Service
 export async function LikePostService(postId, username) {
@@ -62,7 +63,8 @@ export async function CommentPostService(postId, username) {
     throw error;
   }
 }
-// Comment Post Service
+
+// Replay Comment Service
 export async function ReplayCommentPostService(
   postId,
   postAuthor,
@@ -103,6 +105,26 @@ export async function ReplayCommentPostService(
       body: JSON.stringify({ comments: updatedComments }),
     });
     return await updateResponse.json();
+  } catch (error) {
+    console.error('Failed to comment on post:', error);
+    throw error;
+  }
+}
+
+//Delete Replay Comment Service
+export async function DeleteReplayCommentPostService(
+  postId,
+  postAuthor,
+  username,
+  userRole,
+  commentId,
+  replayId
+) {
+  try {
+    const response = await fetch(`${VITE_BASE_API_URL}/posts/${postId}`, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
   } catch (error) {
     console.error('Failed to comment on post:', error);
     throw error;
@@ -183,8 +205,8 @@ export async function SharePostService(postId, username) {
   }
 }
 
-export async function EditPostService(postId, username) {
-  window.location.href.assign(`/edit_post/${postId}`);
+export async function EditPostService(postId) {
+  window.location.assign(`${VITE_BASE_URL}/edit_post/${postId}`);
 }
 
 //Delete Post Service

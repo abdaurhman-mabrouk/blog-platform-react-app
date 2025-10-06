@@ -1,0 +1,48 @@
+.about-wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #0d6efd;
+}
+
+.about-title .icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  color: #0b5ed7;
+}
+
+.offer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.offer-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.bullet-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  color: #0d6efd;
+}

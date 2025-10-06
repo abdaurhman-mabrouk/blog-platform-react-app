@@ -1,10 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../../../auth/AuthContext';
 import PostCard from '../PostCard/PostCard';
 
 const API_BASE_URL = import.meta.env.VITE_BASE_API_URL;
 const UI_BASE_URL = import.meta.env.VITE_BASE_URL;
-
 
 function UserPostsList() {
   const { user } = useAuth();
@@ -34,27 +34,29 @@ function UserPostsList() {
   }, [user?.username]);
 
   return (
-    <>
-      <div>
+    <div className="container my-4">
+      <h2 className="mb-4">Your Posts</h2>
+      <div className="col-12">
         {posts.length > 0 ? (
-          posts.map((post, key) => (
-            <PostCard
-              key={post.id}
-              postId={post.id}
-              postAuthor={post.author}
-              postTitle={post.title}
-              postBody={post.body}
-              postLikes={post.likes}
-              postComments={post.comments}
-              postDate={post.createdAt}
-              postShares={post.shares}
-            />
+          posts.map((post) => (
+            <div className="col-12 col-md-6 col-lg-4" key={post.id}>
+              <PostCard
+                postId={post.id}
+                postAuthor={post.author}
+                postTitle={post.title}
+                postBody={post.body}
+                postDate={post.createdAt}
+                postLikes={post.likes}
+                postComments={post.comments}
+                postShares={post.shares}
+              />
+            </div>
           ))
         ) : (
-          <p>You Didn't Publish Posts Yet.</p>
+          <div className="text-muted">You Didn't Publish Posts Yet.</div>
         )}
       </div>
-    </>
+    </div>
   );
 }
 

@@ -6,8 +6,88 @@
       "password": "root",
       "id": "5776",
       "role": "admin",
-      "token": "mbkq2zlljlchaoqzgs",
-      "expiresAt": 1749295748793
+      "token": "mgdzeprcb9t65z7z99n",
+      "expiresAt": 1759772060904,
+      "joinedAt": "2025-05-20T18:00:33.317Z",
+      "addRequests": [],
+      "sentAddRequests": [
+        {
+          "id": "voprieikz1s",
+          "sender": "root",
+          "receiver": "hacker",
+          "date": "2025-09-27T10:59:57.867Z"
+        },
+        {
+          "id": "5xzsukyve0t",
+          "sender": "root",
+          "receiver": "manager",
+          "date": "2025-10-01T05:15:26.391Z"
+        },
+        {
+          "id": "8ehthe00ox7",
+          "sender": "root",
+          "receiver": "v-vsoso",
+          "date": "2025-10-01T05:15:30.141Z"
+        },
+        {
+          "id": "q99n02g0g9",
+          "sender": "root",
+          "receiver": "editor",
+          "date": "2025-10-01T05:15:40.826Z"
+        }
+      ],
+      "friends": [
+        "admin",
+        "hacker"
+      ],
+      "profilePicture": "",
+      "bio": "this is my Bio",
+      "age": 22
+    },
+    {
+      "id": "u1001",
+      "username": "alice",
+      "email": "alice@alice",
+      "password": "alice",
+      "role": "user",
+      "token": "tokalice1001",
+      "expiresAt": 1762000000000,
+      "joinedAt": "2025-10-01T10:00:00.000Z",
+      "addRequests": [],
+      "friends": [],
+      "profilePicture": "",
+      "bio": "Hi, I'm Alice!",
+      "sentAddRequests": []
+    },
+    {
+      "id": "u1002",
+      "username": "bob",
+      "email": "bob@bob",
+      "password": "bob",
+      "role": "user",
+      "token": "tokbob1002",
+      "expiresAt": 1762000000000,
+      "joinedAt": "2025-10-01T10:01:00.000Z",
+      "addRequests": [],
+      "friends": [],
+      "profilePicture": "",
+      "bio": "Hey, I'm Bob!",
+      "sentAddRequests": []
+    },
+    {
+      "id": "u1004",
+      "username": "diana",
+      "email": "diana@diana",
+      "password": "diana",
+      "role": "user",
+      "token": "tokdiana1004",
+      "expiresAt": 1762000000000,
+      "joinedAt": "2025-10-01T10:03:00.000Z",
+      "addRequests": [],
+      "friends": [],
+      "profilePicture": "",
+      "bio": "Hi, I'm Diana!",
+      "sentAddRequests": []
     },
     {
       "id": "521b",
@@ -15,8 +95,30 @@
       "email": "admin@admin",
       "password": "admin",
       "role": "admin",
-      "token": "mbcm6p22tmt0dfls1k",
-      "expiresAt": 1748805473882
+      "token": "mg1bbyhwmijhvx4bsl",
+      "expiresAt": 1759006027364,
+      "joinedAt": "2025-05-20T18:00:33.317Z",
+      "addRequests": [
+        {
+          "id": "jnxia6cy0fo",
+          "sender": "hacker",
+          "receiver": "admin",
+          "date": "2025-09-28T05:47:10.064Z"
+        }
+      ],
+      "friends": [
+        "root"
+      ],
+      "profilePicture": "",
+      "bio": "this is my Bio",
+      "sentAddRequests": [
+        {
+          "id": "3peo0s9tdb8",
+          "sender": "admin",
+          "receiver": "root",
+          "date": "2025-09-26T20:47:22.920Z"
+        }
+      ]
     },
     {
       "username": "hacker",
@@ -24,16 +126,56 @@
       "password": "hacker",
       "id": "e624",
       "role": "user",
-      "token": "mbhs6jx4yraspdhhlg",
-      "expiresAt": 1749117875800
+      "token": "mg3a09pm6kc0ih5qar",
+      "expiresAt": 1759124734762,
+      "joinedAt": "2025-05-20T18:00:33.317Z",
+      "addRequests": [],
+      "friends": [
+        "root"
+      ],
+      "profilePicture": "",
+      "bio": "this is my Bio",
+      "sentAddRequests": [
+        {
+          "id": "jnxia6cy0fo",
+          "sender": "hacker",
+          "receiver": "admin",
+          "date": "2025-09-28T05:47:10.064Z"
+        },
+        {
+          "id": "yqdhnxcb7rn",
+          "sender": "hacker",
+          "receiver": "manager",
+          "date": "2025-09-28T05:47:19.851Z"
+        }
+      ]
     },
     {
       "id": "2ae2",
       "username": "manager",
       "email": "manager@manager",
       "password": "manager",
-      "token": "mbgg9khdns3l0br4up",
-      "expiresAt": 1749037394929
+      "token": "mfxrk35ybcret8a4m0m",
+      "expiresAt": 1758791415814,
+      "joinedAt": "2025-05-20T18:00:33.317Z",
+      "addRequests": [
+        {
+          "id": "yqdhnxcb7rn",
+          "sender": "hacker",
+          "receiver": "manager",
+          "date": "2025-09-28T05:47:19.851Z"
+        },
+        {
+          "id": "5xzsukyve0t",
+          "sender": "root",
+          "receiver": "manager",
+          "date": "2025-10-01T05:15:26.391Z"
+        }
+      ],
+      "friends": [],
+      "profilePicture": "",
+      "bio": "this is my Bio",
+      "sentAddRequests": []
     },
     {
       "id": "76dd",
@@ -41,7 +183,43 @@
       "email": "v-vsoso@v-vsoso",
       "password": "990gh",
       "token": "mbi9um7fhjeectkbs3f",
-      "expiresAt": 1749147551979
+      "expiresAt": 1749147551979,
+      "joinedAt": "2025-05-20T18:00:33.317Z",
+      "addRequests": [
+        {
+          "id": "8ehthe00ox7",
+          "sender": "root",
+          "receiver": "v-vsoso",
+          "date": "2025-10-01T05:15:30.141Z"
+        }
+      ],
+      "friends": [],
+      "role": "user",
+      "profilePicture": "",
+      "bio": "this is my Bio",
+      "sentAddRequests": []
+    },
+    {
+      "id": "482013",
+      "username": "editor",
+      "email": "editor@editor",
+      "password": "editor",
+      "friends": [],
+      "profilePicture": "",
+      "joinedAt": "2025-06-10T11:08:10.207Z",
+      "addRequests": [
+        {
+          "id": "q99n02g0g9",
+          "sender": "root",
+          "receiver": "editor",
+          "date": "2025-10-01T05:15:40.826Z"
+        }
+      ],
+      "role": "user",
+      "bio": "this is my Bio",
+      "token": "mg39yzlyjdmgz9w4dvg",
+      "expiresAt": 1759124675014,
+      "sentAddRequests": []
     }
   ],
   "posts": [
@@ -56,7 +234,7 @@
         {
           "id": "c1dju",
           "username": "root",
-          "text": "Asome!",
+          "text": "Awsome!",
           "replies": [
             {
               "id": "06a7dae",
@@ -67,6 +245,26 @@
               "id": "1749212353779ghb2c9auf",
               "username": "root",
               "text": "dczEfAWefaEf"
+            },
+            {
+              "id": "1749213594448bpi54qk14",
+              "username": "root",
+              "text": "تاتابةتتاا"
+            },
+            {
+              "id": "1749462965071dyicg4y6n",
+              "username": "root",
+              "text": "sdcEdsdds"
+            },
+            {
+              "id": "1749640908117x53zx5rly",
+              "username": "root",
+              "text": "hsbshbshbsh"
+            },
+            {
+              "id": "1758196302656gs7h9ckaa",
+              "username": "root",
+              "text": "fkdsmfkvmsk"
             }
           ]
         },
@@ -89,6 +287,16 @@
               "id": "1749213230391fxv7wgeht",
               "username": "root",
               "text": "KKKKKKK."
+            },
+            {
+              "id": "17492134597546ij85dsel",
+              "username": "root",
+              "text": "Replay on this no carer post!"
+            },
+            {
+              "id": "1758921316467hz1ykylre",
+              "username": "root",
+              "text": "kdnjznrjfsjv"
             }
           ]
         },
@@ -96,48 +304,11 @@
           "id": "1749213255837sasrx83uy",
           "username": "root",
           "text": "zndfjnsjnzjndh"
-        }
-      ],
-      "likes": [
-        "root"
-      ],
-      "shares": [
-        "root",
-        "root",
-        "root",
-        "root",
-        "root"
-      ]
-    },
-    {
-      "title": "sserrgerge",
-      "body": "sdfsdfdfsser",
-      "createdAt": "2025-05-20T19:15:30.329Z",
-      "author": "root",
-      "userId": "5776",
-      "id": "7f4f",
-      "comments": [],
-      "likes": [
-        "root"
-      ]
-    },
-    {
-      "id": "2562",
-      "title": "gsrgsdfgd",
-      "body": "rgsdrsdgesrg",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-05-22T11:02:44.821Z",
-      "comments": [
-        {
-          "id": "vdsa",
-          "username": "root",
-          "text": "hello"
         },
         {
-          "id": "vdsw",
+          "id": "1749240758442cb6erbk35",
           "username": "root",
-          "text": "shshhsh"
+          "text": "znkrnjf"
         }
       ],
       "likes": [
@@ -145,116 +316,13 @@
       ],
       "shares": [
         "root",
+        "root",
+        "root",
+        "root",
+        "root",
+        "root",
         "root"
       ]
-    },
-    {
-      "id": "a68f",
-      "title": "jvszhuweuha u4eh u",
-      "body": " hj ddhfuisheruierh jbsrejh uvebneru surb4 rfneu\n",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-05-22T13:29:48.234Z",
-      "comments": [],
-      "likes": [
-        "root"
-      ]
-    },
-    {
-      "id": "6a6c",
-      "title": "vvvvvvvvvvvvvvvvvvvvvv",
-      "body": "vvvvvvvvvvvvvvvvvvvv",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-05-22T17:56:23.471Z",
-      "comments": [],
-      "likes": [
-        "root"
-      ]
-    },
-    {
-      "id": "611b",
-      "title": "dfWE",
-      "body": "dzrfgvbz",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-05-22T18:05:15.875Z",
-      "comments": [],
-      "likes": [
-        "root"
-      ]
-    },
-    {
-      "id": "06a7",
-      "title": "segegsggs",
-      "body": "sgsegsgsesgsers",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-05-23T04:10:25.141Z",
-      "comments": [],
-      "likes": [
-        "root"
-      ]
-    },
-    {
-      "id": "a009",
-      "title": "safwwwwwwwww",
-      "body": "faweeeeee",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-05-23T04:11:23.945Z",
-      "comments": [],
-      "likes": [
-        "root"
-      ]
-    },
-    {
-      "id": "1c85",
-      "title": "serev",
-      "body": "sggrsesger",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-05-23T04:11:56.226Z",
-      "comments": [],
-      "likes": [
-        "root"
-      ]
-    },
-    {
-      "id": "8400",
-      "title": "dfserse",
-      "body": "rszvsergf",
-      "author": "hacker",
-      "userId": "e624",
-      "createdAt": "2025-05-25T11:29:56.374Z",
-      "comments": [
-        {
-          "id": "06a7w",
-          "username": "hacker",
-          "text": "Hello From Hacker Post"
-        }
-      ]
-    },
-    {
-      "id": "aaf2",
-      "title": "dnnnnn",
-      "body": "dnrtttttttttt",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-05-26T10:00:46.205Z",
-      "comments": [],
-      "likes": [
-        "root"
-      ]
-    },
-    {
-      "id": "f9ed",
-      "title": "kvszijrvejgij",
-      "body": "lkiorrgejkfjmiser\nflkrodkrtgoie\n",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-05-27T13:23:07.689Z",
-      "comments": []
     },
     {
       "id": "b820",
@@ -269,15 +337,6 @@
           "text": "No One Cares!"
         }
       ]
-    },
-    {
-      "id": "b2a1",
-      "title": "sdsjnsjnfjsn",
-      "body": "mkdfnjfncmzvnjrnfjsnd",
-      "author": "root",
-      "userId": "5776",
-      "createdAt": "2025-06-01T05:18:42.754Z",
-      "comments": []
     },
     {
       "id": "d1a2",
@@ -312,41 +371,296 @@
     {
       "id": "fa70",
       "title": "Which One ?",
-      "body": "-Angular.js- VS -React.js-",
+      "body": "-Angular.js- VS -React.js-\nAffair Competition!",
       "author": "root",
       "userId": "5776",
       "createdAt": "2025-06-03T14:53:40.250Z",
       "likes": [
         "root"
+      ],
+      "comments": [
+        {
+          "id": "1749214079647kw1dexoxe",
+          "username": "root",
+          "text": "vaEZEws",
+          "replies": [
+            {
+              "id": "1749215494606tgonboaqm",
+              "username": "root",
+              "text": "dEFWEFWE"
+            }
+          ]
+        }
       ]
     },
     {
-      "id": "a299",
-      "title": "Hdhdhdhxh",
-      "body": "Hxhxhshdh",
+      "id": "0664",
+      "title": "Hello From New Version of My Platform With Few enhances.",
+      "body": "No Thing To Mention.",
       "author": "root",
       "userId": "5776",
-      "createdAt": "2025-06-04T18:24:53.812Z",
-      "likes": [
-        "root"
+      "createdAt": "2025-06-08T19:32:25.191Z"
+    },
+    {
+      "id": "44ac",
+      "title": "Is That True ?!.",
+      "body": "JavaScript is the world's most popular programming language.\n\nJavaScript is the programming language of the Web.\n\nJavaScript is easy to learn.\n\nThis tutorial will teach you JavaScript from basic to advanced.",
+      "author": "root",
+      "userId": "5776",
+      "createdAt": "2025-06-09T09:47:23.146Z"
+    },
+    {
+      "id": "0766",
+      "title": "How R U Members ?",
+      "body": "Hope Good",
+      "author": "root",
+      "userId": "5776",
+      "createdAt": "2025-06-10T11:16:42.818Z"
+    },
+    {
+      "id": "fd3c",
+      "title": "I Build The Add Friend Request and Unfriend MicroServices Today!",
+      "body": "Check it Out!",
+      "author": "root",
+      "userId": "5776",
+      "createdAt": "2025-09-18T20:23:05.837Z"
+    }
+  ],
+  "chats": [
+    {
+      "id": "maefnsdknk",
+      "createdAt": "2025-05-20T18:00:33.317Z",
+      "users": [
+        "root",
+        "admin"
+      ],
+      "messages": [
+        {
+          "id": "kdirgiqae",
+          "sender": "root",
+          "receiver": "admin",
+          "text": "Hello Admin, how are you?",
+          "date": "2025-06-04T18:31:39.848Z"
+        },
+        {
+          "id": "kdirgiqaf",
+          "sender": "admin",
+          "receiver": "root",
+          "text": "I'm good, thanks! How can I help you?",
+          "date": "2025-06-04T18:32:10.000Z"
+        },
+        {
+          "id": "2025-06-09T16:31:22.607Z0.54592",
+          "text": "Hello",
+          "sender": "admin",
+          "receiver": "root",
+          "date": "2025-06-09T16:31:23.617Z"
+        },
+        {
+          "id": "2025-06-10T15:58:10.364Z0.90186",
+          "text": "dngrneu",
+          "sender": "root",
+          "receiver": "admin",
+          "date": "2025-06-10T15:58:10.377Z"
+        },
+        {
+          "id": "2025-06-11T11:16:36.482Z0.68958",
+          "text": "zjhwejbvazerydh",
+          "sender": "root",
+          "receiver": "admin",
+          "date": "2025-06-11T11:16:36.494Z"
+        },
+        {
+          "id": "2025-06-12T05:20:57.356Z0.71601",
+          "text": "How's it today?!",
+          "sender": "root",
+          "receiver": "admin",
+          "date": "2025-06-12T05:20:57.371Z"
+        },
+        {
+          "id": "2025-10-05T18:08:39.309Z0.63335",
+          "text": "Trend ?",
+          "sender": "root",
+          "receiver": "admin",
+          "date": "2025-10-05T18:08:39.321Z"
+        }
       ]
     },
     {
-      "id": "3a85",
-      "title": "tututug",
-      "body": "fututufyf",
-      "author": "v-vsoso",
-      "userId": "76dd",
-      "createdAt": "2025-06-04T18:27:25.069Z"
+      "id": "dmnvzje77d",
+      "createdAt": "2025-05-22T18:00:33.317Z",
+      "users": [
+        "root",
+        "hacker"
+      ],
+      "messages": [
+        {
+          "id": "kdirgiqae",
+          "sender": "root",
+          "receiver": "hacker",
+          "text": "Hello Hacker, what's up?",
+          "date": "2025-05-04T18:31:39.848Z"
+        },
+        {
+          "id": "kdirgiqaf",
+          "sender": "hacker",
+          "receiver": "root",
+          "text": "Not much, just checking the platform.",
+          "date": "2025-05-04T18:32:00.000Z"
+        },
+        {
+          "id": "2025-06-09T16:27:43.656Z0.35709",
+          "text": "zvkrdnjnd",
+          "sender": "root",
+          "receiver": "hacker",
+          "date": "2025-06-09T16:27:43.680Z"
+        },
+        {
+          "id": "2025-06-09T16:30:13.712Z0.42695",
+          "text": "zkjnejernj",
+          "sender": "root",
+          "receiver": "hacker",
+          "date": "2025-06-09T16:30:13.726Z"
+        },
+        {
+          "id": "2025-06-11T11:39:39.232Z0.93131",
+          "text": "@Root",
+          "sender": "root",
+          "receiver": "hacker",
+          "date": "2025-06-11T11:39:39.247Z"
+        },
+        {
+          "id": "2025-09-17T17:14:18.446Z0.73505",
+          "text": "You are so NoThing!!",
+          "sender": "root",
+          "receiver": "hacker",
+          "date": "2025-09-17T17:14:18.459Z"
+        }
+      ]
     },
     {
-      "id": "abc3",
-      "title": "zdifhhirfihfihfrhi",
-      "body": "fiejjeifihefhi",
-      "author": "v-vsoso",
-      "userId": "76dd",
-      "createdAt": "2025-06-04T18:31:39.848Z"
+      "id": "dhsdjkaqei",
+      "createdAt": "2025-05-19T18:00:33.317Z",
+      "users": [
+        "root",
+        "manager"
+      ],
+      "messages": [
+        {
+          "id": "2025-06-09T18:08:03.381Z0.47851",
+          "text": "Are U Mngr!!!",
+          "sender": "root",
+          "receiver": "manager",
+          "date": "2025-06-09T18:08:03.418Z"
+        },
+        {
+          "id": "2025-06-11T15:05:02.342Z0.00140",
+          "text": "You Are Not ?!",
+          "sender": "root",
+          "receiver": "manager",
+          "date": "2025-06-11T15:05:02.357Z"
+        },
+        {
+          "id": "2025-06-12T05:25:55.963Z0.27498",
+          "text": "Updated!",
+          "sender": "root",
+          "receiver": "manager",
+          "date": "2025-06-12T05:25:55.982Z"
+        },
+        {
+          "id": "2025-06-12T05:26:07.710Z0.59328",
+          "text": "STill!",
+          "sender": "root",
+          "receiver": "manager",
+          "date": "2025-06-12T05:26:07.725Z"
+        },
+        {
+          "id": "2025-06-12T05:27:20.954Z0.75816",
+          "text": "csaef!",
+          "sender": "root",
+          "receiver": "manager",
+          "date": "2025-06-12T05:27:20.986Z"
+        },
+        {
+          "id": "2025-09-17T21:05:18.105Z0.26119",
+          "text": "fffffffffff",
+          "sender": "root",
+          "receiver": "manager",
+          "date": "2025-09-17T21:05:18.125Z"
+        }
+      ]
+    },
+    {
+      "id": "2025-06-10T15:51:00.539Z0.56611",
+      "users": [
+        "root",
+        "leader"
+      ],
+      "messages": [
+        {
+          "id": "2025-06-10T15:53:23.131Z0.85292",
+          "text": "Hello",
+          "sender": "root",
+          "receiver": "leader",
+          "date": "2025-06-10T15:53:23.142Z"
+        }
+      ],
+      "createdAt": "2025-06-10T15:51:00.539Z"
+    },
+    {
+      "id": "2025-06-11T10:38:44.623Z0.42700",
+      "users": [
+        "root",
+        "v-vsoso"
+      ],
+      "messages": [
+        {
+          "id": "2025-06-11T10:38:54.247Z0.54661",
+          "text": "dsjksdjksj",
+          "sender": "root",
+          "receiver": "v-vsoso",
+          "date": "2025-06-11T10:38:54.267Z"
+        },
+        {
+          "id": "2025-06-11T11:20:09.928Z0.85318",
+          "text": "njnunuhuni",
+          "sender": "v-vsoso",
+          "receiver": "root",
+          "date": "2025-06-11T11:20:09.986Z"
+        },
+        {
+          "id": "2025-06-11T11:23:26.059Z0.27129",
+          "text": "Hello How Are You ?",
+          "sender": "root",
+          "receiver": "v-vsoso",
+          "date": "2025-06-11T11:23:26.070Z"
+        },
+        {
+          "id": "2025-06-29T18:08:35.072Z0.60679",
+          "text": "Hello Again!",
+          "sender": "root",
+          "receiver": "v-vsoso",
+          "date": "2025-06-29T18:08:35.142Z"
+        }
+      ],
+      "createdAt": "2025-06-11T10:38:44.623Z"
+    },
+    {
+      "id": "2025-09-22T20:15:45.079Z0.09729",
+      "users": [
+        "editor",
+        "root"
+      ],
+      "messages": [
+        {
+          "id": "2025-09-22T20:16:03.542Z0.33414",
+          "text": "Hello Root!",
+          "sender": "editor",
+          "receiver": "root",
+          "date": "2025-09-22T20:16:03.552Z"
+        }
+      ],
+      "createdAt": "2025-09-22T20:15:45.079Z"
     }
-  ],
-  "pages": []
+  ]
 }

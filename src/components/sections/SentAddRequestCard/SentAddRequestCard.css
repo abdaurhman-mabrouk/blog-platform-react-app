@@ -1,0 +1,59 @@
+.sent-request-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  margin: 0.7rem auto;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+.sent-request-card:hover {
+  transform: translateY(-3px);
+}
+
+.sent-request-info {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.user-icon {
+  flex-shrink: 0;
+}
+
+.request-text {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.receiver {
+  color: #0d6efd;
+}
+
+.date {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.cancel-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s ease-in-out;
+}
+
+.cancel-btn:hover {
+  background: #d62839;
+}

@@ -2,6 +2,7 @@
 import React, { lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './auth/Login.jsx';
 import Register from './auth/Register.jsx';
 import Navbar from './components/sections/Navbar/Navbar.jsx';
@@ -16,16 +17,23 @@ import NotFound from './pages/NotFound.jsx';
 import PofilePage from './pages/PofilePage.jsx';
 import DashboardPage from './pages/DashboardPage.jsx';
 import UsersList from './components/sections/UsersList/UsersList.jsx';
+import ChatWindow from './components/sections/ChatWindow/ChatWindow.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import UserFriendsPage from './pages/UserFriendsPage.jsx';
+import UserDetails from './components/sections/UserDetails/UserDetails.jsx';
+import HomePage from './pages/HomePage.jsx';
 
 function App() {
   return (
     <>
       <Navbar />
+      <ChatWindow />
 
       <Routes>
-        <Route path="/" element={<div>Home</div>} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/about" element={<AboutPage />} />
 
         <Route
           path="/new_post"
@@ -33,6 +41,15 @@ function App() {
             <PrivateRoute>
               <NewPostPage />
             </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/edit_post/:id"
+          element={
+            // <PrivateRoute>
+            <EditPostForm />
+            // </PrivateRoute>
           }
         />
 
@@ -55,20 +72,11 @@ function App() {
         />
 
         <Route
-          path="/edit_post/:id"
-          element={
-            // <PrivateRoute>
-            <EditPostForm />
-            // </PrivateRoute>
-          }
-        />
-
-        <Route
           path="/post/:id"
           element={
-            // <PrivateRoute>
-            <PostDetails />
-            // </PrivateRoute>
+            <PrivateRoute>
+              <PostDetails />
+            </PrivateRoute>
           }
         />
 
@@ -82,20 +90,38 @@ function App() {
         />
 
         <Route
+          path="/friends"
+          element={
+            <PrivateRoute>
+              <UserFriendsPage />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
           path="/dashboard"
           element={
-            // <PrivateRoute>
-            <DashboardPage />
-            // </PrivateRoute>
+            <PrivateRoute>
+              <DashboardPage />
+            </PrivateRoute>
           }
         />
 
         <Route
           path="/users"
           element={
-            // <PrivateRoute>
-            <UsersList />
-            // </PrivateRoute>
+            <PrivateRoute>
+              <UsersList />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/user/:username"
+          element={
+            <PrivateRoute>
+              <UserDetails />
+            </PrivateRoute>
           }
         />
 
